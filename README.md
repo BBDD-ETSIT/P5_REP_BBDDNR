@@ -78,13 +78,14 @@ Crear 4 carpetas para que allí se almacenen los datos de cada una de las instan
     mongod --port 27003 --replSet my-mongo-set --dbpath ./data_patients/data3 --oplogSize 50
     mongod --port 27004 --replSet my-mongo-set --dbpath ./data_patients/data4 --oplogSize 50
     ```
-    Si teneis otro Sistema Operativo, como Windows, para ejecutar mongod debeis abrir una PowerShell e ir al directorio donde teneis almacenado mongod.exe. Además, deben indicar la ruta absoluta de donde se encuentra la carpeta data_patients, por ejemplo si el repositorio ha sido clonado en el escritorio la instrucción a ejecutar sería similar a esta: PS C:\Archivos de programa\MongoDB\Server\4.2\bin> .\mongod --port 27001 --replSet my-mongo-set —dbpath C:\Users\usuarioX\Desktop\P5_REP_BBDDNR\data_patients\data1 --oplogSize 50
+    Si teneis otro Sistema Operativo, como Windows, para ejecutar mongod debeis abrir una PowerShell e ir al directorio donde teneis almacenado mongod.exe. Además, deben indicar la ruta absoluta de donde se encuentra la carpeta data_patients, por ejemplo si el repositorio ha sido clonado en el escritorio la instrucción a ejecutar sería similar a esta: PS C:\Archivos de programa\MongoDB\Server\4.2\bin> .\mongod.exe --port 27001 --replSet my-mongo-set —dbpath C:\Users\usuarioX\Desktop\P5_REP_BBDDNR\data_patients\data1 --oplogSize 50
     
 2. Se creará la réplica, indicando que todos los servidores están en el mismo conjunto, para ello nos conectamos al servidor que va a actuar como primario:
 
     ```
     mongo --host localhost:27001
     ```
+Si teneis Windows el comando se deberá ejecutar como ./mongo.exe como siempre hemos hecho. Al final estamos abriendo una shell contra el mongod que tenemos en el puerto 27001 que será el primario.
 
 3. Configurar el replica set para que las 4 instancias que se levantaron anteriormente sean parte del replicaset my-mongo-set. Busque en las transparencias de clase como inicializar el replica set con varias intancias a la vez. Debe definir con prioridad igual a 900 al servidor principal ("localhost:27001") y a la cuarta instancia de mongodb ("localhost:27004") se debe configurar para que tenga una prioridad de 0 y que el tiempo de retardo de replicación esté limitado a 60 seg.
 
