@@ -55,7 +55,10 @@ Crear 4 carpetas para que allí se almacenen los datos de cada una de las instan
 
     ```
     $ mkdir data_patients
-    $ mkdir data_patients/data1 data_patients/data2 data_patients/data3 data_patients/data4
+    $ mkdir data_patients/data1 
+    $ mkdir data_patients/data2 
+    $ mkdir data_patients/data3 
+    $ mkdir data_patients/data4
     ```
 
 
