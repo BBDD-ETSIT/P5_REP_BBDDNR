@@ -34,32 +34,32 @@ Abra un terminal en su ordenador y siga los siguientes pasos.
 
 El proyecto debe clonarse en el ordenador desde el que se está trabajando con:
 
-    ```
-    git clone https://github.com/BBDD-ETSIT/P5_REP_BBDDNR
-    ```
+```
+git clone https://github.com/BBDD-ETSIT/P5_REP_BBDDNR
+```
 
 y entrar en el directorio de trabajo
 
-    ```
-    $ cd P5_REP_BBDDNR
-    ```
+```
+cd P5_REP_BBDDNR
+```
 
 Una vez dentro de la carpeta, se instalan las dependencias con:
 
-    ```
-    $ npm install
-    ```
+```
+npm install
+```
 
 Crear 4 carpetas en el escritorio del ordenador. En ellas se almacenen los datos de cada una de las instancias de mongo que se desplegarán. Para ello, puede abrir otra terminal o powershell distinta, navegue usando el comando "cd" hasta el escritorio y una vez alli, ejecute los siguientes comandos. [IMPORTANTE] La carpeta data_patients se debe crear fuera del directorio de la práctica.
 
 
-    ```
-    $ mkdir data_patients
-    $ mkdir data_patients/data1 
-    $ mkdir data_patients/data2 
-    $ mkdir data_patients/data3 
-    $ mkdir data_patients/data4
-    ```
+```
+mkdir data_patients
+mkdir data_patients/data1 
+mkdir data_patients/data2 
+mkdir data_patients/data3 
+mkdir data_patients/data4
+```
 
 
 ## 5. Tareas a realizar
@@ -121,7 +121,7 @@ La herramienta de autocorrección preguntará por el correo del alumno y el toke
 Para instalar y hacer uso de la [herramienta de autocorrección](https://www.npmjs.com/package/autocorector) en el ordenador local, ejecuta los siguientes comandos en el directorio del proyecto:
 
 ```
-$ autocorector
+autocorector
 ```
 
 Se puede pasar la herramienta autocorector tantas veces como se desee sin ninguna repercusión en la calificación.
@@ -130,7 +130,7 @@ Se puede pasar la herramienta autocorector tantas veces como se desee sin ningun
 
 Una vez satisfecho con su calificación, el alumno puede subir su entrega a Moodle con el siguiente comando:
 ```
-$ autocorector --upload
+autocorector --upload
 ```
 
 El alumno podrá subir al Moodle la entrega tantas veces como desee pero se quedará registrada solo la última subida.
