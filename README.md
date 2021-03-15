@@ -35,7 +35,7 @@ Abra un terminal en su ordenador y siga los siguientes pasos.
 El proyecto debe clonarse en el ordenador desde el que se está trabajando con:
 
     ```
-    $ git clone https://github.com/BBDD-ETSIT/P5_REP_BBDDNR
+    git clone https://github.com/BBDD-ETSIT/P5_REP_BBDDNR
     ```
 
 y entrar en el directorio de trabajo
