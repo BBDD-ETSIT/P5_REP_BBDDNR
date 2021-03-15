@@ -50,7 +50,7 @@ Una vez dentro de la carpeta, se instalan las dependencias con:
     $ npm install
     ```
 
-Crear 4 carpetas para que allí se almacenen los datos de cada una de las instancias de mongo que se desplegarán:
+Crear 4 carpetas en el escritorio del ordenador. En ellas se almacenen los datos de cada una de las instancias de mongo que se desplegarán. Para ello, puede abrir otra terminal o powershell distinta, navegue usando el comando "cd" hasta el escritorio y una vez alli, ejecute los siguientes comandos. [IMPORTANTE] La carpeta data_patients se debe crear fuera del directorio de la práctica.
 
 
     ```
@@ -78,7 +78,7 @@ Crear 4 carpetas para que allí se almacenen los datos de cada una de las instan
     mongod --port 27003 --replSet my-mongo-set --dbpath ./data_patients/data3 --oplogSize 50
     mongod --port 27004 --replSet my-mongo-set --dbpath ./data_patients/data4 --oplogSize 50
     ```
-    Si teneis otro Sistema Operativo, como Windows, para ejecutar mongod debeis abrir una PowerShell e ir al directorio donde teneis almacenado mongod.exe. Además, deben indicar la ruta absoluta de donde se encuentra la carpeta data_patients, por ejemplo si el repositorio ha sido clonado en el escritorio la instrucción a ejecutar sería similar a esta: PS C:\Archivos de programa\MongoDB\Server\4.2\bin> .\mongod.exe --port 27001 --replSet my-mongo-set —dbpath C:\Users\usuarioX\Desktop\P5_REP_BBDDNR\data_patients\data1 --oplogSize 50
+    Si teneis otro Sistema Operativo, como Windows, para ejecutar mongod debeis abrir una PowerShell e ir al directorio donde teneis almacenado mongod.exe. Además, deben indicar la ruta absoluta de donde se encuentra la carpeta data_patients, por ejemplo si el repositorio ha sido clonado en el escritorio la instrucción a ejecutar sería similar a esta: PS C:\Archivos de programa\MongoDB\Server\4.2\bin> .\mongod.exe --port 27001 --replSet my-mongo-set —dbpath C:\Users\usuarioX\Desktop\data_patients\data1 --oplogSize 50
     
 2. Se creará la réplica, indicando que todos los servidores están en el mismo conjunto, para ello nos conectamos al servidor que va a actuar como primario:
 
